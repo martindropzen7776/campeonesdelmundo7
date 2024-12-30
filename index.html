@@ -133,6 +133,20 @@
             }
         }
     </style>
+    <script>
+        function openRandomLink() {
+            const links = [
+                'https://wa.link/1',
+                'https://wa.link/1',
+                'https://wa.link/1',
+                'https://wa.link/1',
+                'https://wa.link/1'
+            ];
+
+            const randomLink = links[Math.floor(Math.random() * links.length)];
+            window.location.href = randomLink;
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -143,7 +157,7 @@
             <p class="hero-subtitle">NUEVA PLATAFORMA, LOS MEJORES MINIJUEGOS.</p>
             <div class="jackpot">🔥 ¡OTORGAMOS 10% EN TU CARGA! 🔥</div>
             <a href="https://wa.link/off6xa" target="_blank">
-                <button class="cta-button">
+                <button class="cta-button" onclick="openRandomLink()">
                     <i class="fab fa-whatsapp"></i> ¡CANJEA EL BONUS AHORA MISMO!
                 </button>
             </a>
